@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Copyright from './components/Copyright';
 import SearchResult from './pages/SearchResult';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import Recommendations from './components/Recommendations';
 
 class App extends React.Component {
  render () {
@@ -18,8 +19,10 @@ class App extends React.Component {
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route path='/flights/:from/:to/:date' component={SearchResult}/>
+            <Route path='/flights' component={SearchResult}/>
           </Switch>
 
+        
         <Footer/>
         <Copyright/>
 

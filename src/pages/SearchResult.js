@@ -9,15 +9,11 @@ function SearchResult() {
       console.log(window.location.href);
       const from = window.location.href.split("/").reverse()[2];
       const to = window.location.href.split("/").reverse()[1];
-        const date = window.location.href.split("/").reverse()[0];
+      const date = window.location.href.split("/").reverse()[0];
         
       const config = {
         method: "get",
         url: `http://localhost:8080/api/v1/flights/${from}/${to}/${date}`,
-        // headers: {
-        //   "Content-Type": "application/json",
-        //   "X-Auth-Token": "b75f515919a94829830c8199beb46c05",
-        // },
       };
 
       axios(config)
@@ -37,31 +33,30 @@ function SearchResult() {
 
 
     return(
-        <div className="container py-5">
-            <table className="table mt-0 table-dark">
+        <div className="container-fluid bg-dark" id="plm">
+            <table className="table table-dark">
                     <thead>
                     <tr>
-                        <th scope="col">#</th>
                         <th scope="col">Departure</th>
-                        <th scope="col"></th>
-                        <th scope="col">Handle</th>
+                        <th scope="col">Arrival</th>
+                        <th scope="col">Departure Date</th>
+                        <th scope="col">Arrival Date</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Buy</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <th scope="row">1</th>
                         <td>Mark</td>
                         <td>Otto</td>
                         <td>@mdo</td>
                     </tr>
                     <tr>
-                        <th scope="row">2</th>
                         <td>Jacob</td>
                         <td>Thornton</td>
                         <td>@fat</td>
                     </tr>
                     <tr>
-                        <th scope="row">3</th>
                         <td>Larry</td>
                         <td>the Bird</td>
                         <td>@twitter</td>
