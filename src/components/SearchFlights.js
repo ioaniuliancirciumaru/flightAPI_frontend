@@ -23,11 +23,11 @@ class SearchFlights extends React.Component {
                         <div class="row">
                             <div class="col-lg-4 ml-auto text-center">
                                 <p>Departure date</p>
-                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input"/>
+                                <input class="form-control" type="date" value="2020-10-09" id="example-date-input"/>
                             </div>
                             <div class="col-lg-4 mr-auto text-center">
                                 <p>Arrival date</p>
-                                <input class="form-control" type="date" value="2011-08-19" id="example-date-input"/>
+                                <input class="form-control" type="date" value="2020-10-09" id="example-date-input"/>
                             </div>
                         </div>
                         {/* <!-- Search button --> */}

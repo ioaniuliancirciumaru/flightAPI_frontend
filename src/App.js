@@ -17,7 +17,7 @@ class App extends React.Component {
 
           <Switch>
             <Route exact path='/' component={Home}/>
-            <Route path='/' component={SearchResult}/>
+            <Route path='/flights/:from/:to/:date' component={SearchResult}/>
           </Switch>
 
         <Footer/>
