@@ -12,7 +12,7 @@ After buying the ticket you will receive an email with the confirmation.
 
 Travelling has never been easier!
 
-## The [back-end](https://github.com/AlexandruOriean/flightAPI_backend) of the app.
+## The [back-end](https://github.com/ioaniuliancirciumaru/flightAPI_backend) of the app.
 
 ![Index page of the app](/img/index-page.png "Index page")
 ![Recomandations](/img/recomandations.png "Recomandations")
